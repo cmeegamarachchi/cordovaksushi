@@ -1,0 +1,45 @@
+{
+  "ProjectName": "CordovaKSushi",
+  "ProjectGuid": "a2dadf59-4c31-411b-9470-30d1d6038eb2",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.CordovaKSushi",
+  "DisplayName": "CordovaKSushi",
+  "Author": "",
+  "Description": "CordovaKSushi",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{0f2483b8-3a12-4b82-97e8-c8c55981f1f9}",
+  "WP8ProductID": "{1264058d-0ddd-4a02-bd91-9b0732cceeda}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.CordovaKSushi",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
