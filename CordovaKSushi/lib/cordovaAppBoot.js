@@ -13,11 +13,5 @@ var cordovaAppBoot = {
         };
 
         angular.bootstrap(document.getElementById('appScope'), ["sushiApp"]);
-
-        var kendoApp = new kendo.mobile.Application(document.body, {
-            transition: 'slide',
-            skin: 'flat'
-        });
-
     }
 };
