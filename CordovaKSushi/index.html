@@ -6,7 +6,7 @@
     <link href="content/kendo.mobile.all.min.css" rel="stylesheet" />
     <link href="content/style.css" rel="stylesheet" />
 </head>
-<body k-hash-bang="true" k-skin= "'flat'" k-transition="'slide'" kendo-mobile-application id="appScope">
+<body k-hash-bang="true" k-skin="'flat'" k-transition="'slide'" k-hash-bang="true" kendo-mobile-application id="appScope">
     <kendo-mobile-layout k-id="'default'">
         <kendo-mobile-header>
             <kendo-mobile-nav-bar>
@@ -25,8 +25,14 @@
         </kendo-mobile-footer>
     </kendo-mobile-layout>
 
-    <kendo-mobile-view id="index" k-title="'Kendo sushi'" k-layout="'default'" ng-controller="indexController as vm">
+    <kendo-mobile-view id="index" k-title="'Kendo sushi'" k-layout="'default'" k-on-before-show="vm.filterFeatured()" ng-controller="indexController as vm">
         <kendo-mobile-list-view id="featured" class="item-list" k-data-source="vm.sushiCart.productsDataSource">
+            <div k-template>{{dataItem.name}}</div>
+        </kendo-mobile-list-view>
+    </kendo-mobile-view>
+
+    <kendo-mobile-view id="menu" k-title="'Menu'" k-layout="'default'" k-on-before-show="vm.groupByCategory()" ng-controller="menuController as vm">
+        <kendo-mobile-list-view id="menuList" class="item-list" k-data-source="vm.sushiCart.productsDataSource">
             <div k-template>{{dataItem.name}}</div>
         </kendo-mobile-list-view>
     </kendo-mobile-view>
