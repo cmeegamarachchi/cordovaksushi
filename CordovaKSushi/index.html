@@ -6,7 +6,7 @@
     <link href="content/kendo.mobile.all.min.css" rel="stylesheet" />
     <link href="content/style.css" rel="stylesheet" />
 </head>
-<body kendo-mobile-application id="appScope" k-hash-bang="true" k-skin="'flat'" k-transition="'slide'" k-initial="'#index'" k-hash-bang="true">
+<body kendo-mobile-application id="appScope" k-hash-bang="true" k-skin="'flat'" k-transition="'slide'" k-initial="'#!app/views/home.html'" k-hash-bang="true">
     <kendo-mobile-layout k-id="'default'">
         <kendo-mobile-header>
             <kendo-mobile-nav-bar>
@@ -17,34 +17,14 @@
 
         <kendo-mobile-footer>
             <kendo-mobile-tab-strip>
-                <a href="#!/" data-icon="home">Home</a>
-                <a href="#!menu" data-icon="organize">Our menu</a>
+                <a href="#!app/views/home.html" data-icon="home">Home</a>
+                <a href="#!app/views/menu.html" data-icon="organize">Our menu</a>
                 <a href="#!cart" data-icon="cart">Cart</a>
                 <a href="#!account" data-icon="contacts">Account</a>
             </kendo-mobile-tab-strip>
         </kendo-mobile-footer>
     </kendo-mobile-layout>
 
-
-    <kendo-mobile-view id="index" k-title="'Kendo sushi'" k-layout="'default'" k-on-before-show="vm.filterFeatured()" ng-controller="indexController as vm">
-        <kendo-mobile-list-view id="featured" class="item-list" k-data-source="vm.sushiCart.productsDataSource">
-            <kendo-mobile-button k-on-click="vm.sushiCart.addToCart(kendoEvent, dataItem)" data-item-id="">
-            </kendo-mobile-button>
-            <!--Link pointed by href in the anchor below is yet to be implemented-->
-            <a class="details-link" data-role="listview-link" href="\#!details?id=">
-                <img ng-src="content/images/75/" />
-                <h2></h2>
-                <span class="added" ng-show="dataItem.visibleMessage">Item added to cart <span></span> times.</span>
-            </a>
-        </kendo-mobile-list-view>
-    </kendo-mobile-view>
-
-
-    <kendo-mobile-view id="menu" k-title="'Menu'" k-layout="'default'" k-on-before-show="vm.groupByCategory()" ng-controller="menuController as vm">
-        <kendo-mobile-list-view id="menuList" class="item-list" k-data-source="vm.sushiCart.productsDataSource">
-            <div k-template>{{dataItem.name}}</div>
-        </kendo-mobile-list-view>
-    </kendo-mobile-view>
 
     <script src="lib/jquery.min.js"></script>
     <script src="lib/angular.min.js"></script>

@@ -1,0 +1,5 @@
+<kendo-mobile-view id="menu" k-title="'Menu'" k-layout="'default'" k-on-before-show="vm.groupByCategory()" ng-controller="menuController as vm">
+    <kendo-mobile-list-view id="menuList" class="item-list" k-data-source="vm.sushiCart.productsDataSource">
+        <div k-template>{{dataItem.name}}</div>
+    </kendo-mobile-list-view>
+</kendo-mobile-view>

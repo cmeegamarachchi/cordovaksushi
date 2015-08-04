@@ -29,7 +29,8 @@
     <Content Include="app\controllers.js" />
     <Content Include="app\data.js" />
     <Content Include="app\services.js" />
-    <Content Include="app\views\index.html" />
+    <Content Include="app\views\home.html" />
+    <Content Include="app\views\menu.html" />
     <Content Include="content\images\200\california-rolls.jpg" />
     <Content Include="content\images\200\chicken-teriyaki.jpg" />
     <Content Include="content\images\200\chirashi-sushi.jpg" />
